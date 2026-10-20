@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial">
+        <title>Contact us</title>
+        <link rel = "stylesheet" href ="./assets/CSS/style.CSS"/>
+    </head>
+    <body>
+
+        <header class="navHeader">
+    <a href="#"><img src="./assets/img/logo.jpeg" alt="logo" width="100px"/></a>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropDownwrapper">
+
+            <a href="services.html">Services</a>
+            
+           <div class="dropDown">
+                <nav >
+                <a href="services.html">web dev</a>
+                <a href="#">call center</a>
+                <a href="#">Procurement</a>
+                <a href="#">Hosting</a>
+            </nav>
+           </div>
+
+        </div>
+        
+        <a href="gallery.html">Gallery</a>
+        <a href="#" class="active">Contact</a>
+    </nav>
+
+    <img width="30px" src="./assets/img/burger.svg" alt="logo" id="toggle" />
+    </header>
+    </header>
+
+        <header class="pageHero">
+            <h1>Contact us</h1>
+            <h2>Ways to reach us</h2>
+            <h3>Fill the form to inform us</h3>
+        </header>
+
+        <main>
+            <div><p>Lorem ipsum dolor sit amet.</p></div>
+            <div>
+                <form method="get" onsubmit="alert('I am here now')">
+                <label for="names">Names</label>
+                <input type="text"id="names" name="names" placeholder="Names"tabindex="1" autofocus autocapitalize="true" autocomplete="true"/>
+                
+                <label for="password">Password</label>
+                <input type="password"
+                id="password" 
+                name="password" 
+                tabindex="2" 
+                placeholder="*****"
+                minlength="6" 
+                maxlength="15"/>
+
+                <label for="email">Email</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="******"
+                tabindex="3"
+                inlength="7"/>
+
+                <label for="color">Color</label>
+                <input type="color" 
+                id="color" 
+                name="color" 
+                tabindex="4"
+                required/>
+
+                <label for="datetime">Date time</label>
+                <input type="datetime-local" name="datetime"
+                id="datetime" tabindex="5"/>
+
+                <label for="file">File</label>
+                <input type="file" id="file" name="file" accept="*"/>
+
+                <label for="search">Search</label>
+                <input type="search" placeholder="Search here" 
+                id="search" name="search" required/>
+
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male"/>
+
+                    <label for="male">Female</label>
+                    <input type="radio" name="gender" id="female"/>
+
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Option</legend>
+                    <label for="kiwi">Kiwi</label>
+                    <input type="checkbox" id="kiwi" name="kiwi"/>
+
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" id="orange" name="orange"/>
+
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" id="apple" name="apple"/>
+
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" id="banana" name="banana"/>
+                </fieldset>
+
+                <select name="select" id="select">
+                    <option value="" selected disabled>--slect--</option>
+                    <option value="kiwi">Kiwi</option>
+                    <option value="orange">Orange</option>
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                </select>
+
+                <label for="browser"> Chose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser"/>
+                
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+
+                <label for="msg">Message</label>
+                <textarea name="msg" id="msg" 
+                placeholder="Leave us a message"
+                cols="15"
+                rows="5"></textarea>
+                
+
+                <button type="submit" class="send">Send</button>
+                <button type="reset" class="reset">Reset</button>
+            </form>           
+             </div>
+
+             <details open>
+                <summary>How is the program</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos reiciendis, sit nesciunt minima unde consectetur mollitia fugit molestiae consequatur molestias rem perferendis dolorum ducimus voluptatibus. Sint quasi eius iure laborum?</p>
+             </details>
+
+             <details>
+                <summary>How is the program</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos reiciendis, sit nesciunt minima unde consectetur mollitia fugit molestiae consequatur molestias rem perferendis dolorum ducimus voluptatibus. Sint quasi eius iure laborum?</p>
+             </details>
+
+             <details>
+                <summary>How is the program</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos reiciendis, sit nesciunt minima unde consectetur mollitia fugit molestiae consequatur molestias rem perferendis dolorum ducimus voluptatibus. Sint quasi eius iure laborum?</p>
+             </details>
+        </main>
+    </body>
+</html>

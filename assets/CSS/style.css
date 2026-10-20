@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /*border: 1px solid red;*/
+}
+
+.active{
+    text-decoration: double!important;
+    color: blueviolet!important;
+    transform: scale(0.4rem)!important;
+}
+
+.navHeader{
+
+    background-color: bisque;
+    padding: 1rem 4rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    /*position: fixed;*/
+    width: 100%;
+
+}
+
+.navHeader > nav {
+    display: none;
+}
+
+/*siblings part*/
+.navHeader > nav > a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    text-transform: uppercase;
+    /*border: 1px solid red;*/
+    transition: all 2s;
+}
+
+.navHeader > nav > a:hover{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+/*.navHeader > nav > a:visited{
+    color: orange;
+}*/
+
+.navHeader > nav > a:active{
+    color: red;
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+}
+
+.dropDown >nav > a {
+    display: block;
+    color: #ffffff !important;
+    margin-block-start: 0.5rem;
+    text-decoration: none;
+}
+
+.dropDownwrapper {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.dropDownwrapper a {
+    text-decoration: none;
+}
+
+.dropDownwrapper:hover > .dropDown {
+    display: block;
+
+}
+
+#heroHeader{
+    height: 100vh;
+    /*background-color: #000;*/
+    background-image: url(../img/IMG-20260907-WA0067.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-direction: column;*/
+
+}
+
+/*descendant part selector*/
+#heroHeader div{
+background-color: rgba(0, 0, 0, 0.6);
+color: #fff;
+padding: 2rem;
+
+
+box-shadow: 2px 1px 9px 0px;
+border-radius: 19px;
+
+}
+
+#heroHeader > div > h1{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;; */
+    animation: animate 4s infinite alternate;
+    
+}
+
+@keyframes animate {
+    0%{
+        color: blueviolet;
+        font-size: larger;
+    }
+
+    25%{
+        color: black;
+        font-size: 900;
+    }
+
+    50%{
+        color: brown;
+        font-size: x-large;
+    }
+
+    75%{
+        color: aquamarine;
+        font-size: xx-large;
+    }
+
+    100%{
+        color: crimson;
+        font-size: xx-small;
+    }
+}
+
+.sec >div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.sec > div >div > div> img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem 1rem 0 0;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.sec > div > div > div> img:hover{
+    transform: scale(1.3);
+    
+}
+
+.img-wrapper{
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    height: 350px;
+}
+
+
+.sec > div >div > div> p{
+    padding: 1rem;
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    border-radius: 360px;
+
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: 1;
+}
+
+.sec > div > div {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem 1rem 0 0 ;
+    box-shadow: 1px 0px 9px 0px gray;
+    
+}
+
+.sec2{
+    /*border: 2px solid yellow;*/
+    margin: 5rem 2rem 3rem 2rem;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.secondMarquee{
+    padding: 1rem;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0rem;
+}
+
+article{
+    padding: 2rem;
+    margin: 2rem;
+    background-color: gold;
+    line-height: 1.8rem;
+    word-spacing: 0.5rem;
+}
+
+.pageHero {
+    padding: 9rem 3rem 5rem;
+    color: #ffffff;
+
+    background: 
+    linear-gradient(270deg,
+    rgba(0, 0, 0, 0)50%,
+    rgba(154, 234, 157, 0.9)0%), url("../img/IMG-20260813-WA0012.jpg")no-repeat center;
+
+    background-size: 100%;
+}
+
+.aboutus > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse ;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 4rem;
+
+}
+
+.aboutus > div > div {
+    width: 100%;
+    max-width: 500px;
+    /*border: 1px solid red;*/
+}
+
+.aboutus > div > div img {
+    width:100% ;
+}
+
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-block: 3rem;  
+}
+
+.media > div {
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 500%;
+}
+
+.media > div > audio, 
+.media > div > video{
+width: 100%;
+}
+
+.table {
+    width: 100%;
+    overflow: auto;
+}
+
+.table table {
+    margin: 0 auto;
+}
+
+.table table, td, th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    margin-block: 3rem;
+}
+
+.table tr:nth-child(even){
+    background-color:blanchedalmond;
+}
+
+.table tr:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+main {
+    margin: 2rem;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+input[type="text"],
+input[type="password"],  
+input[type="mail"],
+input[type="datetime-local"], 
+input[type="search"],
+input[type="file"],
+select,  
+
+textarea {
+    display: block;
+    width: 100%;
+    margin-block: 0.5rem;
+    padding: 1rem 0.5rem ;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    margin-block-start: 1rem;
+    color: #ffffff;
+}
+
+.send {
+    background-color: blue;
+}
+
+.reset {
+    background-color: red;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: auto 100px 300px; */
+    gap: 3rem;
+}
+
+.grid > div {
+    background-color: azure;
+    border: 1px solid rebeccapurple;
+    padding: 3rem;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+#toggle{
+    display: inline-block;
+}
+
+
+footer{
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media only screen and (min-width: 678px){
+    #toggle{
+    display: none;
+}
+
+.navHeader > nav {
+    display: inline-block;
+}
+
+
+}
